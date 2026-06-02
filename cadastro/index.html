@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista-cadastro</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+<div class="form-box">
+        
+        <h1>Cadastro</h1>
+    
+    
+        <input type="text" placeholder="Digite seu nome" id="nome">
+        <input type="number" placeholder="Digite sua idade" min="1" id="idade">
+
+        <p class="p-box">Selecione seu curso</p>
+
+        <select id="curso">
+            <option value="Informática">Informática</option>
+                <option value="Admnistração">ADM</option>
+        </select>
+
+        <p class="p-box">Vai fazer ENEM?</p>
+
+        <select id="enem">
+            <option value="true">Sim</option>
+                <option value="false">Não</option>
+        </select>
+        <br><br>
+
+        <button id="enviar" onclick="cadastrar()" class="enviar-btn">Enviar formulario</button>
+        
+</div>
+
+<div class="blackout"></div>
+
+<div class="lista-div">
+    <h2>Lista</h2>
+    <div class="p">
+    <p id="p"></p>
+</div>
+    <div class="botoes">
+    <button onclick="adicionar()">Adicionar novo aluno</button>
+    </div>
+    <div class="lista">
+    <ul id="lista">
+    </ul>
+    </div>
+</div>
+</div>
+
+<!-- From Uiverse.io by escannord --> 
+
+
+    <script src="script.js"></script>
+</body>
+</html>
